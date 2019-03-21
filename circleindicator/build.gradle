@@ -26,6 +26,3 @@ dependencies {
     compileOnly 'androidx.recyclerview:recyclerview:1.0.0'
     compileOnly 'com.google.android.material:material:1.0.0'
 }
-
-//apply from: "upload-jcenter.gradle"
-//apply from: "upload-maven.gradle"
