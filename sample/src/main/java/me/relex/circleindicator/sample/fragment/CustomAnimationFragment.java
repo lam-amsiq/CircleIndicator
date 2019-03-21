@@ -5,8 +5,12 @@ import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import java.util.Objects;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 import me.relex.circleindicator.CircleIndicator;
@@ -39,7 +43,7 @@ public class CustomAnimationFragment extends Fragment {
                 .margin(indicatorMargin)
                 .animator(R.animator.indicator_animator)
                 .animatorReverse(R.animator.indicator_animator_reverse)
-                .drawable(R.drawable.black_radius_square)
+                .drawable(ContextCompat.getDrawable(Objects.requireNonNull(getContext()), R.drawable.black_radius_square))
                 .build();
         indicator.initialize(config);
 

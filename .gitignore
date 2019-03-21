@@ -7,3 +7,8 @@
 /.idea/dictionaries
 .DS_Store
 /build
+/.idea/gradle.xml
+/CircleIndicator.iml
+/circleindicator/circleindicator.iml
+/LoopingViewPager/LoopingViewPager.iml
+/sample/sample.iml
